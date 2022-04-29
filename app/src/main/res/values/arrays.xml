@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="caregiver_options">
+        <item>Pomoc %s</item>
+        <item>Usuń</item>
+        <item>Anuluj</item>
+    </array>
+
+    <array name="intervals_array">
+        <item>Every 24 hours</item>
+        <item>Every 12 hours</item>
+        <item>Every 8 hours</item>
+        <item>Every 6 hours</item>
+        <item>Every 4 hours</item>
+        <item>Every 2 hours</item>
+    </array>
+
+    <array name="medications_shape_array">
+        <item>tabletka(i)</item>
+        <item>saszetka(i)</item>
+        <item>szklanka(i)</item>
+        <item>łyżeczka(i)</item>
+        <item>kropla(e)</item>
+
+    </array>
+    <array name="pill_cycle_formats">
+        <item>21+7</item>
+        <item>22+6</item>
+        <item>23+5</item>
+        <item>24+4</item>
+        <item>26+2</item>
+        <item>28+0</item>
+        <item>35+7</item>
+        <item>42+7</item>
+        <item>63+7</item>
+        <item>84+7</item>
+        <item>14+14</item>
+    </array>
+    <array name="week_days_abbreviations">
+        <item>niedz</item>
+        <item>pon</item>
+        <item>wt</item>
+        <item>śr</item>
+        <item>czw</item>
+        <item>pt</item>
+        <item>sob</item>
+    </array>
+</resources>

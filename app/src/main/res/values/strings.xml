@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Apteka_Prototype</string>
+    <string name="title_activity_find_pharmacy">find_pharmacy</string>
+    <string name="google_map_key">AIzaSyDgsKetxIcZlkZpK7DgZMoYGbsYXfMloyY</string>
+    <string name="title_medicine_name">Nazwa Leku</string>
+    <string name="hint_enter_med_name">Wprowadź Lek</string>
+    <string name="medicine_days">Dni Przyjmowania </string>
+    <string name="title_treatment_deadline">Czas przyjęcia</string>
+    <string name="title_continuous_use">Kontynujuj</string>
+    <string name="title_reminder">Przypomnienie</string>
+    <string name="new_medicine">NOWY LEK</string>
+    <string name="every_day">Każdego Dnia</string>
+    <string name="no_medicine_added">Brak Dodanych Powiadomień</string>
+    <string name="loading_tasks_error">Błąd!</string>
+    <string name="successfully_saved_me_message">Przypomnienie Dodane Poprawnie</string>
+    <string name="successfully_deleted_message">Przypomnienie Usuinięte Poprawnie</string>
+    <string name="reminder_message">Czas na przyjęcie leku!</string>
+    <string name="ignored">IGNORUJ</string>
+    <string name="taken">WZIĘTE</string>
+    <string name="all">WSZYSTKIE</string>
+    <string name="menu_filter">Filtry</string>
+    <string name="all_label">Wszystkie Leki</string>
+    <string name="ignore_label">Medicines Ignored</string>
+    <string name="taken_label">Wzięte Leki</string>
+    <string name="no_history">Brak Historii</string>
+    <string name="no_taken_med_history">Nie wziąłeś żadnego leku</string>
+    <string name="no_ignored_history">Dobra Robota!</string>
+    <string name="menu_stats">Raport Miesięczny</string>
+</resources>
