@@ -80,7 +80,7 @@
                     android:id="@+id/tv_dose_details"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:text="1.0 adhesive(s)" />
+                    tools:text="1.0 tabletka" />
             </LinearLayout>
 
             <ImageView

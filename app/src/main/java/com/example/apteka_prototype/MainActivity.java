@@ -13,7 +13,6 @@ import android.widget.ImageButton;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.apteka_prototype.addmedicine.AddMedicineActivity;
 import com.example.apteka_prototype.medicine.MedicineActivity;
 
 import java.io.*;
@@ -28,52 +27,7 @@ public class MainActivity extends AppCompatActivity{
     private ImageButton imageButton3;
     private ImageButton imageButton4;
     private ImageButton imageButton5;
-    private AppDatabase DB;
 
-
-    public void readcsv(){
-        String file = "src\\Rejestr.csv";
-        BufferedReader reader = null;
-        String line = "";
-
-        try{
-            reader = new BufferedReader(new InputStreamReader(getAssets().open("Rejestr.csv")));
-            while ((line = reader.readLine()) !=null){
-
-                String[] row = line.split(",");
-
-                Lek temp = new Lek();
-                temp.IPL = row[0];
-                temp.NPL = row[1];
-                temp.NPS = row[2];
-                temp.RP = row[3];
-                temp.GD = row[4];
-                temp.OK = row[5];
-                temp.M = row[6];
-                temp.PF = row[7];
-                temp.WP = row[8];
-                temp.TP = row[9];
-                temp.NP = row[10];
-                temp.KA = row[11];
-                temp.PO = row[12];
-                temp.OP = row[13];
-                temp.SC = row[14];
-                temp.UL = row[15];
-                temp.CH = row[16];
-                DB.lekDao().insertAll(temp);
-            }
-        }
-        catch(Exception e){
-            e.printStackTrace();
-        }
-        finally {
-            try {
-                reader.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,24 +39,23 @@ public class MainActivity extends AppCompatActivity{
         ImageButton imageButton3 = (ImageButton) findViewById(R.id.drugs_database);
         ImageButton imageButton4 = (ImageButton) findViewById(R.id.my_drugs);
         ImageButton imageButton5 = (ImageButton) findViewById(R.id.find_pharmacy);
-        DB = Room.databaseBuilder(getApplicationContext(),AppDatabase.class,"DB").build();
-        readcsv();
+
 
         TextView theTextView = (TextView) findViewById(R.id.textView);
 
         Calendar c = Calendar.getInstance();
         int timeOfDay = c.get(Calendar.HOUR_OF_DAY);
 
-        if(timeOfDay >= 0 && timeOfDay < 18){
+        if(timeOfDay <= 5){
             theTextView.setText("DZIEŃ DOBRY");
-        }else if(timeOfDay >= 18 && timeOfDay < 24){
+        }else if(timeOfDay >= 18){
             theTextView.setText("DOBRY WIECZÓR");}
 
 
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(MainActivity.this, add_prescription.class);
+                Intent intent1 = new Intent(MainActivity.this, AddActivity.class);
                 startActivity(intent1);
             }
         });
@@ -123,7 +76,7 @@ public class MainActivity extends AppCompatActivity{
         imageButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent4 = new Intent(MainActivity.this, my_drugs.class);
+                Intent intent4 = new Intent(MainActivity.this, add_prescription.class);
                 startActivity(intent4);
             }
         });

@@ -46,14 +46,22 @@
             android:exported="false" />
         <activity
             android:name=".add_prescription"
+            android:theme="@style/AppTheme"
             android:exported="false" />
+
+        <activity android:name=".UpdateActivity"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".add_prescription"/>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".AddActivity"
+            android:label="Dodaj Lek"
+            android:parentActivityName=".add_prescription" />
 
         <activity
             android:name=".addmedicine.AddMedicineActivity" />
         <activity
             android:name=".alarm.ReminderActivity" />
-        <activity
-            android:name=".report.MonthlyReportActivity" />
         <activity
             android:name=".medicine.MedicineActivity" />
 

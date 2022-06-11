@@ -112,7 +112,6 @@ public class MedicineActivity extends AppCompatActivity {
             ActivityUtils.addFragmentToActivity(getSupportFragmentManager(), medicineFragment, R.id.contentFrame);
         }
 
-        //Create MedicinePresenter
         presenter = new MedicinePresenter(Injection.provideMedicineRepository(MedicineActivity.this), medicineFragment);
     }
 
