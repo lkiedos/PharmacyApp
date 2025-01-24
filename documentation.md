@@ -1,11 +1,13 @@
 ## README.md
 
-# Aplikacja Apteki
+# Dokumentacja aplikacji Pharmacy App
 
-Aplikacja do zarządzania zażywanymi lekami.
+Aplikacja Pharmacy App została zaprojektowana w celu pomocy w zarządzaniu zażywanymi lekami.
 
 ## Interfejs
+Poniżej znajduje się przykładowy zrzut ekranu interfejsu aplikacji:
+
 ![Przykładowy zrzut ekranu](/img/interface.png)
 
-Dokumentacja aplikacji "Aplikacja Apteki" zawiera projekt interfejsu użytkownika oraz funkcjonalności umożliwiające zarządzanie zażywanymi lekami.
+Interfejs aplikacji umożliwia użytkownikowi wygodne zarządzanie zażywanymi lekami oraz monitorowanie ich spożycia.
 
